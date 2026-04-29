@@ -11,14 +11,14 @@ const projectCards = [
         id: "2",
         title: "Quiz time",
         description: "What cat are you today?",
-        imageUrl: "https://placehold.co/300x200?text=Fun+App",
+        imageUrl: "https://placehold.co/300x200?text=Funny+Time",
         link: "https://placehold.co/300x200?text=Fun App"
     },
     {
         id: "3",
         title: "Search Map",
         description: "Nearby restaurants, shops, etc",
-        imageUrl: "https://placehold.co/300x200?text=Map",
+        imageUrl: "https://placehold.co/300x200?text=Useful+Tool",
         link: "https://placehold.co/300x200?text=Map"
     }
 ];
