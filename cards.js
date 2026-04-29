@@ -2,23 +2,24 @@
 const projectCards = [
     {
         id: "1",
-        title: "React Dashboard",
-        description: "A complex admin project built with React and Tailwind.",
+        title: "Learn JavaScript",
+        description: "Understand the basic of JavaScript.",
         imageUrl: "https://placehold.co/300x200?text=React+Project",
-        link: "https://github.com/user/react-dashboard"
+        link: "https://placehold.co/300x200?text=React+Project"
     },
     {
         id: "2",
-        title: "API Weather App",
-        description: "A simple app that fetches data from a weather API.",
-        imageUrl: "https://placehold.co/300x200?text=Weather+App",
-        link: "https://github.com/user/weather-app"
+        title: "Quiz time",
+        description: "What cat are you today?",
+        imageUrl: "https://placehold.co/300x200?text=Fun+App",
+        link: "https://placehold.co/300x200?text=Fun App"
     },
     {
         id: "3",
-        title: "JavaScript Calculator",
-        description: "A vanilla JavaScript logic project.",
-        imageUrl: "https://placehold.co/300x200?text=JS+Calculator"
+        title: "Search Map",
+        description: "Nearby restaurants, shops, etc",
+        imageUrl: "https://placehold.co/300x200?text=Map"
+        link: "https://placehold.co/300x200?text=Map"
     }
 ];
 
