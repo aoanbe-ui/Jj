@@ -18,7 +18,7 @@ const projectCards = [
         id: "3",
         title: "Search Map",
         description: "Nearby restaurants, shops, etc",
-        imageUrl: "https://placehold.co/300x200?text=Map"
+        imageUrl: "https://placehold.co/300x200?text=Map",
         link: "https://placehold.co/300x200?text=Map"
     }
 ];
