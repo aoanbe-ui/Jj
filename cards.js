@@ -22,9 +22,7 @@ const projectCards = [
     }
 ];
 
-// 2. Function to render cards dynamically
 function renderCards(cardsArray) {
-    // Create a container and append it to the body
     const container = document.createElement('div');
     container.id = 'card-container';
     container.style.display = 'flex';
@@ -34,30 +32,27 @@ function renderCards(cardsArray) {
     document.body.appendChild(container);
 
     cardsArray.forEach(card => {
-        // Create elements
         const cardDiv = document.createElement('div');
         const img = document.createElement('img');
         const h3 = document.createElement('h3');
         const p = document.createElement('p');
         
-        // Style the card
+        // Initial Styles
         cardDiv.style.border = '1px solid #ccc';
         cardDiv.style.borderRadius = '8px';
         cardDiv.style.padding = '15px';
         cardDiv.style.width = '250px';
         cardDiv.style.cursor = 'pointer';
+        cardDiv.style.backgroundColor = 'white'; // Set initial color
         cardDiv.style.transition = 'background-color 0.3s';
 
-        // Set content
         img.src = card.imageUrl;
         img.style.width = '100%';
         h3.textContent = card.title;
         p.textContent = card.description;
 
-        // Append to cardDiv
         cardDiv.append(img, h3, p);
 
-        // Optional Link Button
         if (card.link) {
             const btn = document.createElement('a');
             btn.href = card.link;
@@ -67,15 +62,23 @@ function renderCards(cardsArray) {
             cardDiv.appendChild(btn);
         }
 
-        // --- Event Listener ---
+        // --- NEW HOVER LOGIC ---
+        
+        // 1. When mouse enters, turn pink
+        cardDiv.addEventListener('mouseenter', () => {
+            cardDiv.style.backgroundColor = 'pink';
+        });
+
+        // 2. When mouse leaves, return to white
+        cardDiv.addEventListener('mouseleave', () => {
+            cardDiv.style.backgroundColor = 'white';
+        });
+
+        // Keep your original click listener if you want
         cardDiv.addEventListener('click', () => {
-            // Toggle highlight style
-            const isHighlighted = cardDiv.style.backgroundColor === 'lightyellow';
-            cardDiv.style.backgroundColor = isHighlighted ? 'white' : 'lightyellow';
             console.log(`Clicked on: ${card.title}`);
         });
 
-        // Append card to container
         container.appendChild(cardDiv);
     });
 }
